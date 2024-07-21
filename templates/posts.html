@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+All posts
+{% endblock %}
+
+{% block content %}
+<h1>All posts</h1>
+{% for post in posts %}
+<div class="bg-body-tertiary p-5 rounded">
+    <h2>{{ post.title }}</h2>
+    <p class="lead">{{ post.text }}</p>
+    <a class="btn btn-lg btn-primary" href="" role="button">View more »</a>
+</div>
+{% endfor %}
+{% endblock %}

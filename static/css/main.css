@@ -1,0 +1,36 @@
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.header__img {
+    height: 48px;
+    width: 48px;
+    transform: rotateY(180deg);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
